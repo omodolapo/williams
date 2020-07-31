@@ -1,0 +1,260 @@
+
+  * {
+    box-sizing: border-box;
+  }
+  
+body{
+   background-color: white;
+}
+
+header{
+    text-align: center;
+    position: relative;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px rgb(83, 75, 59);
+
+}
+
+nav{
+    text-align: left;
+    position: relative;
+    background-color: r#333;
+    padding: 10px;
+    border-radius: 4px;
+    overflow: auto;
+}
+
+nav a{
+    color: rgb(7, 38, 39);
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+ text-shadow: 2px 2px 4px rgb(44, 43, 43);
+    cursor: pointer;
+}
+
+p{
+    color: rgb(58, 58, 58);
+
+}
+h2{
+    color: rgb(53, 52, 52);
+    cursor: pointer;
+    text-align: center;
+}
+#once{
+    display: inline-block;
+    background-image: url('/images/jake-davies-2-MyDjWZ_eU-unsplash.jpg');
+
+}
+
+.web{
+    color: gainsboro;
+    border: 2px solid rgb(112, 5, 60);
+}
+
+ a h2:hover{
+    color: grey;
+}
+ a h2{
+    text-align: right;
+   
+}
+
+.column{
+    float: left;
+    width: 25%;
+    text-indent: 2px;
+    cursor: pointer;
+}
+
+.boxmodel{
+    border: 2px solid red;
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 0px 20px;
+    width: 20px;
+    height: 50px;
+    animation-name: design;
+    animation-duration: 4s;
+    position: relative;
+}
+
+@keyframes design{
+    0%{background-color: lemonchiffon; left: 0px; top: 0px;}
+    25%{background-color: lightcyan;left: 200px; top: 0px;}
+    50%{background-color: lightpink; left: 200px; top: 200px;}
+    75%{background-color: lightseagreen; left: 0px; top: 200px;}
+    100%{background-color: lightskyblue; left: 0px; top: 0px;}
+}
+
+.boxmodel:hover{
+    color: cornsilk;
+    background-color: darkkhaki;
+    cursor: pointer;
+}
+img{
+    width: 450px;
+    height: 300px;
+    margin: 20px;
+    transition: all 1s;
+}
+img:hover{
+    transform: scale(1.1);
+   
+}
+
+section{
+      box-shadow: 2px 2px 4px black;
+      color: rgb(182, 179, 179);
+      border-radius: 4px;
+      background-color: #f1f1f1;
+  }
+
+.container{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    border-style: hidden;
+    cursor: pointer;
+    padding: 5px;
+    align-content: center;
+    text-align: center;
+    
+}
+.container:hover{
+    box-shadow: 2px 2px solid rgb(61, 1, 61);
+    opacity: 0.8;
+}
+h1{
+    font-family: fantasy;
+    font-size: 3em;
+    text-align: center;
+    width: 400px;
+}
+
+
+
+.button{
+    display: inline-block;
+    background-color:teal;
+    border: none;
+    width: 100px;
+    height: 50px;
+    margin: 3px;
+    padding: 2px;
+    animation-duration: 4s;
+    animation-name:esh;
+    
+    transition: all 1s;
+    cursor: pointer;
+
+}
+
+@keyframes esh{
+    0%{background-color: teal;}
+    25% {background-color: teal;}
+    50% {background-color: teal;}
+    75% {background-color: teal;}
+    100% {background-color: teal;}
+}
+
+.button:hover{
+    transform: scale(o.5,0.5);
+    box-shadow: 2px 2px solid black;
+}
+.new{
+    box-align: center;
+    text-align: center;
+}
+
+form{
+    text-align: center;
+
+}
+
+input[type=text]{
+    width: 30%;
+    padding: 12px 20px;
+    color: white;
+    display: inline-block;
+    border: 1px solid wheat;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 8px 20px;
+}
+input[type=email]{
+
+        width: 30%;
+        padding: 12px 20px;
+        color: white;
+        display: inline-block;
+        border: 1px solid wheat;
+        box-sizing: border-box;
+        border-radius: 4px;
+        margin: 8px 20px;
+    
+}
+
+input[type=password]{
+
+    width: 30%;
+    padding: 12px 20px;
+    color: white;
+    display: inline-block;
+    border: 1px solid wheat;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 8px 20px;
+
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: #149da7;
+    color: white;
+    padding: 12px 20px;
+    margin: 30px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  #org{
+     padding: 12px 20px;
+     margin: 8px 50px;
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  .footer{
+     text-align: center;
+     padding: 5px;
+     background-color: rgb(250, 245, 234);
+     border-radius: 4px;
+     margin-top: 20px;
+  }
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }

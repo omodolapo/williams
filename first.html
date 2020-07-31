@@ -1,0 +1,100 @@
+<html>
+    <head>
+
+    </head>  
+    <body>
+        <h2>My First Javascript</h2>
+
+        <button type="button" onclick="document.getElementById('demo').innerHTML=Date()"></button>
+        
+        <p id="demo"></p>
+
+        <h2> What can Javascript Do?</h2>
+
+        <p id="demo">Javascript can change content</p>
+
+        <button type="button" onclick='document.getElementById("demo").innerHTML="Hello Javascript"'>Click Me</button>
+
+        <p id="demu"></p>
+
+        <script>
+            var pi =3.14;
+            var person="John Doe";
+            var answer= "Yes I am";
+
+            document.getElementById("demu").innerHTML= pi +"<br>" +person + "<br>"+ answer;
+
+
+            let firstName="John Snow";
+            let job ='teacher';
+
+            switch(job){
+
+            case "teacher":
+                  console.log(firstName + ' teaches kids how to code');
+                  break;
+
+            case "designer":      
+                  console.log(firstName + ' teaches kids how to sew');
+                  break;
+
+           case "driver":      
+                  console.log(firstName + ' teaches kids how to drive'); 
+                  break; 
+            
+            default:
+                 console.log(firstName + ' has no job');
+            }
+
+            var height= 8;
+
+            height =3 ? console.log("true") : console.log("false");
+
+            let Mark;
+            let John;
+
+           let  avgMark =(116+94+123)/3
+           let avgJohn =(89+120+103)/3
+
+           console.log(avgMark);
+           console.log(avgJohn);
+
+           if(avgJohn> avgMark)
+           {
+               console.log(avgJohn + " is the winner" );
+           }
+           else{
+               console.log(avgMark + " is the winner");
+           }
+
+           let Mary;
+           let avgMary= (97+134+105)/3
+
+           console.log( avgMary);
+
+           if(avgJohn>avgMark && avgJohn>avgMary)
+           {
+               console.log(avgJohn +" is the winner");
+           }
+           else if(avgMark>avgJohn && avgMark>avgMary)
+           {
+            console.log(avgMark +" is the winner");
+           }
+           else{
+            console.log(avgMary +" is the winner");
+           }
+
+           function calculateAge(birthYear){
+               return 2020 -birthYear;
+           }
+
+           let ageJuhn= calculateAge(1990);
+           let ageMike= calculateAge(1948);
+           let ageJane= calculateAge(1969);
+
+           console.log(ageJuhn, ageMike, ageJane);
+
+                 
+        </script>
+    </body>
+</html>
